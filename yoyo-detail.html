@@ -5,72 +5,107 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yoyo Detail: Virtual Pet Cafe</title>
+  <title>Virtual Pet Cafe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <figure>
-        <img src="images/pets.jpg" 
-        alt="A dog and cat enjoying each other's company" 
-        height="100" width="150">
-        <figcaption>Virtual Pet Cafe</figcaption>
+<body class="bg-light">
+  <header class="bg-secondary pt-4 ps-4">
+    <nav class="navbar">
+      <figure class="navbar-brand">
+        <img class="rounded-circle" src="images/pets.jpg" alt="A dog and cat enjoying each other's company" height="100"
+          width="150">
+        <figcaption class="text-white">Virtual Pet Cafe</figcaption>
       </figure>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pet-list.html">Meet our Virtual Pets</a></li>
-        <li><a href="pet-create.html">Create My Pet</a></li>
-        <li><a href="#">View My Pets</a></li>
+      <ul class="nav me-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="pet-list.html">Meet our Virtual Pets</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="pet-create.html">Create My Pet</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#">View My Pets</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Meet Yoyo</h1>
-    <figure>
-      <img src="images/yoyosittingonthefence.jpg" 
-          alt="Yoyo the cat sitting on a fence enjoying some fresh air"
-          height="200" width="300">
-      <figcaption>Yoyo enjoys being out in the backyard</figcaption>
-    </figure>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-secondary">Meet Yoyo</h1>
+          <figure>
+            <img class="rounded-circle detail-image" src="images/yoyosittingonthefence.jpg"
+              alt="Yoyo the cat sitting on a fence enjoying some fresh air" height="200" width="300">
+            <figcaption>Yoyo enjoys being out in the backyard</figcaption>
+          </figure>
+        </div>
 
-    <section>
-      <h2>About Me</h2>
-      <p>Pet type: Cat</p>
-      <p>Breed: Tabby</p>
-      <p>Age: 11</p>
-      <p>Temperament: Gentle</p>
-    </section>
+        <div class="col-md-6 mt-auto">
+          <section>
+            <h2 class="text-secondary">About Me</h2>
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>Pet type :</td>
+                  <td class="fw-bold">Cat</td>
+                </tr>
+                <tr>
+                  <td>Breed : </td>
+                  <td class="fw-bold">Tabby</td>
+                </tr>
+                <tr>
+                  <td>Age : </td>
+                  <td class="fw-bold">11</td>
+                </tr>
+                <tr>
+                  <td>Temperament : </td>
+                  <td class="fw-bold">Gentle</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </section>
+        </div>
+      </div>
 
-    <section>
-      <h2>Fun Facts</h2>
-      <ul>
-        <li>Yoyo loves to snuggle on your lap after a long day.
-          He'll curl in a ball and nap.</li>
-        <li>His favorite toy is anything containing catnip.</li>
-        <li>At night, he sleeps at the foot of the bed.</li>
-      </ul>
-    </section>
+      <div class="row">
+        <div class="col-md-8">
+          <section>
+            <h2 class="text-secondary pt-2">My Story</h2>
+            <p>I was adopted from a shelter and was so happy to find a
+              home here at the cafe.</p>
+            <p>My brother Vanny is also here, but we don't get along.</p>
+            <p>I am exceptionally smart.
+              If I want to leave the cafe and go to my home upstairs,
+              I walk past the video doorbell until it makes a funny noise.
+              Then I wait until one of my humans opens the door for me.
+              I've trained them well.</p>
+            <p>If I'm <em>lonely</em>, I meow loudly.
+              When <span class="text-info fw-bold">I'm hungry</span>, I stand by my bowl.</p>
+          </section>
+        </div>
 
-    <section>
-      <h2>My Story</h2>
-      <p>I was adopted from a shelter and was so happy to find a
-        home here at the cafe.</p>
-      <p>My brother Vanny is also here, but we don't get along.</p>
-      <p>I am exceptionally smart.
-        If I want to leave the cafe and go to my home upstairs,
-        I walk past the video doorbell until it makes a funny noise.
-        Then I wait until one of my humans opens the door for me.
-        I've trained them well.</p>
-        <p>If I'm <em>lonely</em>, I meow loudly.
-        When <span>I'm hungry</span>, I stand by my bowl.</p>
-    </section>
+        <div class="col-md-4">
+          <section class="border border-2 border-secondary">
+            <h2 class="text-light bg-secondary p-2">Fun Facts</h2>
+            <ul>
+              <li>Yoyo loves to snuggle on your lap after a long day.
+                He'll curl in a ball and nap.</li>
+              <li>His favorite toy is anything containing catnip.</li>
+              <li>At night, he sleeps at the foot of the bed.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    All content on this site &copy;Copyright - Virtual Pet Cafe, Inc
-  </footer>
+  <div class="container-fluid">
+    <footer class="border-top border-light mt-4 fw-light">
+      All content on this site &copy;Copyright - Virtual Pet Cafe, Inc
+
+    </footer>
+  </div>
 </body>
 
 </html>
